@@ -1,0 +1,58 @@
+<style>
+    /* Style the body */
+body {
+  font-family: Arial, sans-serif; /* Change font if desired */
+  margin: 20px; /* Add some margin around the form */
+}
+
+/* Style the form */
+form {
+  display: flex; /* Arrange elements horizontally */
+  flex-direction: column; /* Stack elements vertically */
+  width: fit-content; /* Adjust width as needed */
+}
+
+/* Style the label */
+label {
+  display: block; /* Make label span full width */
+  margin-bottom: 5px; /* Add some space between label and input */
+  font-weight: bold; /* Make label text bold for emphasis */
+}
+
+/* Style the input field */
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none; /* Remove default outline on focus */
+}
+
+/* Style the button */
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* Indicate clickable element */
+  margin-top: 10px; /* Add some space above the button */
+}
+
+/* Hover effect for the button */
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+</style>
+<form action="Exit.php" method="post"> 
+    <label for="enroll_no">Enrollment Number:</label>
+    <br />
+  <input type="text" id="enroll_no" name="enroll_no">
+    <br />
+  <label for="place">Place:</label>
+    <br />
+  <input type="text" id="place" name="place">
+    <br />
+    <br />
+  <button type="submit">Submit</button>
+</form>
